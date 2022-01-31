@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="/dist/output.css">
     <title>ChatBox</title>
 </head>
-<body class="font-body bg-slate-50">
+<body class="font-body bg-slate-50 min-w-fit">
     
-    <nav class="px-5 py-4 drop-shadow-sm">
+    <nav class="px-10 py-4 drop-shadow-sm">
         <div class="flex justify-between">
             <h1 class="font-bold">ChatBox</h1>
             <ul class="flex">
-                <li class="ml-4 text-sm border-b-2 border-emerald-300 px-2 uppercase">Home</li>
-                <li class="ml-4 text-sm border-b-2 border-gray-300 px-2">Chat</li>
-                <li class="ml-4 text-sm border-b-2 border-gray-300 px-2">Contact</li>
-                <li class="ml-4 text-sm border-b-2 border-gray-300 px-2">Setting</li>
-                <li class="ml-4 text-sm border-b-2 border-gray-300 px-2">Search Bar</li>
-                <li class="ml-4 text-sm border-b-2 border-gray-300 px-2">Bell</li>
+                <li class="ml-4 text-sm border-b-4 border-emerald-300 pb-1 rounded-md">Home</li>
+                <li class="ml-4 text-sm px-2">Chat</li>
+                <li class="ml-4 text-sm px-2">Contact</li>
+                <li class="ml-4 text-sm px-2">Setting</li>
+                <li class="ml-4 text-sm px-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block text-sm" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg></li>
+                <li class="ml-4 text-sm border-b-2 border-gray-300 px-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                  </svg></li>
             </ul>
         </div>
         
     </nav>
     <section id="chat">
-        <div class="flex flex-row px-16 py-10">
+        <div class="flex flex-row px-16 py-10 ">
             <div id="chat-dashbord" class="basis-1/3">
 
                 <!-- for search form -->
@@ -36,8 +40,81 @@
                           </svg> <span class="ml-2"> search</span></p>
                     </div>
                 </div>
-                <div id="chat-list">Here is chat list</div>
+
+                <!-- end search form -->
+
+                <!-- for chat list -->
+
+                <div id="chat-list" class="my-2 py-6 max-w-full bg-white rounded-sm border border-gray-200 min-w-fit">
+                    
+                    <div class="flex flex-row my-2 hover:bg-pink-100 py-2 relative cursor-pointer">
+                        <div class="relative col-span-1 h-12 w-12 ml-4">
+                            <img src="img/Ajmere.jpg" class="h-12 w-12 max-h-12 max-w-max bg-emerald-400 rounded-full" alt="">
+                            <div class="h-2 w-2 rounded-full bg-emerald-500 border border-white absolute bottom-0 right-1"></div>
+                        </div>
+                        <div class="w-full">
+                            <div class="ml-4">
+                                <h6 class="font-bold">John Doe</h6>
+                                <p class="text-sm text-gray-600">The description </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-span-2 absolute top-2 right-6">
+                            <div class="text-right ">
+                                <p class="text-sm text-gray-600 text-right">09:00</p>
+                            </div>
+                        </div>
+                        <div class="max-w-full w-6 h-6 rounded-full bg-pink-400 border border-white absolute bottom-2 right-6 text-center text-xs p-1">
+                            <p class="align-middle">10000</p> 
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row my-2 hover:bg-pink-100 py-2 relative">
+                        <div class="relative col-span-1 h-12 w-12 ml-4">
+                            <img src="img/Yazmin.jpg" class="h-12 w-12 max-h-12 max-w-max bg-emerald-400 rounded-full" alt="">
+                            <div class="h-2 w-2 rounded-full bg-emerald-500 border border-white absolute bottom-0 right-1"></div>
+                        </div>
+                        <div class="w-full">
+                            <div class="ml-4">
+                                <h6 class="font-bold">John Doe</h6>
+                                <p class="text-sm text-gray-600">The description </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-span-2 absolute top-2 right-6">
+                            <div class="text-right ">
+                                <p class="text-sm text-gray-600 text-right">09:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row my-2 hover:bg-gray-400 py-2 relative">
+                        <div class="relative col-span-1 h-12 w-12 ml-4">
+                            <img src="img/Lisa.jpg" class="h-12 w-12 max-h-12 max-w-max bg-emerald-400 rounded-full" alt="">
+                            <div class="h-2 w-2 rounded-full bg-emerald-500 border border-white absolute bottom-0 right-1"></div>
+                        </div>
+                        <div class="w-full">
+                            <div class="ml-4">
+                                <h6 class="font-bold">John Doe</h6>
+                                <p class="text-sm text-gray-600">The description </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-span-2 absolute top-2 right-6">
+                            <div class="text-right ">
+                                <p class="text-sm text-gray-600 text-right">09:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <!-- end chat list -->
             </div>
+
+
+
             <div id="chatbox" class="ml-10 basis-2/3">
                 <div id="chat-bar">Here is chat bar</div>
                 <div id="chat-show">Here is chat show</div>
