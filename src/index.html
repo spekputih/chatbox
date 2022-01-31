@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/dist/output.css">
     <title>ChatBox</title>
 </head>
-<body class="font-body bg-slate-100 min-w-max h-screen">
+<body class="font-body bg-slate-100 min-w-max h-screen w-screen">
     
     <nav class="px-10 py-4 drop-shadow-sm">
         <div class="flex justify-between">
@@ -98,7 +98,7 @@
 
 
 
-            <div id="chatbox" class="ml-10 basis-2/3 relative">
+            <div id="chatbox" class="ml-10 basis-2/3 relative ">
                 <div id="chat-bar" class="">
                     <div class="flex justify-end">
                         <div class="uppercase text-sm px-3 py-2 bg-white  rounded-full mr-3 mb-2 shadow-md shadow-pink-100 cursor-pointer">
@@ -109,10 +109,36 @@
                         </div>
                     </div>
                 </div>
-                <div id="chat-show" class="h-full bg-white rounded-md border border-gray-100">
-                    <div>
-
+                <div id="chat-show" class="h-full bg-white rounded-md border border-gray-100 p-6 overflow-auto">
+                    <div id="user" class="flex">
+                        <div class="align-middle"> 
+                            <img src="img/Ajmere.jpg" class="h-12 w-12 max-h-12 max-w-max bg-emerald-400 rounded-full" alt="">
+                            <p class="text-sm text-gray-600 text-center mt-1">09:00</p>
+                        </div>
+                        <div class="align-center">
+                            <p id="user-text" class="ml-3 max-w-2xl whitespace-normal bg-gray-300 p-4 rounded-tr-lg rounded-br-lg rounded-bl-lg text-sm">Hello is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  </p>
+                        </div>
                     </div>
+                    <div id="self" class="mb-3">
+                        <div class="flex justify-end">
+                            <p id="user-text" class="ml-3 max-w-2xl whitespace-normal bg-pink-300 p-4 rounded-tl-lg rounded-br-lg rounded-bl-lg text-sm">Hello is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Hello is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Hello </p>
+                        </div>
+                    </div>
+                    <div id="self" class="mb-3">
+                        <div class="flex justify-end">
+                            <p id="user-text" class="ml-3 max-w-2xl whitespace-normal bg-pink-300 p-4 rounded-tl-lg rounded-br-lg rounded-bl-lg text-sm">Hello is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Hello is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Hello </p>
+                        </div>
+                    </div>
+                    <div id="user" class="flex">
+                        <div class="align-middle"> 
+                            <img src="img/Ajmere.jpg" class="h-12 w-12 max-h-12 max-w-max bg-emerald-400 rounded-full" alt="">
+                            <p class="text-sm text-gray-600 text-center mt-1">09:00</p>
+                        </div>
+                        <div class="align-center">
+                            <p id="user-text" class="ml-3 max-w-2xl whitespace-normal bg-gray-300 p-4 rounded-tr-lg rounded-br-lg rounded-bl-lg text-sm">Hello is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  </p>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div id="chat-tool" class="absolute bottom-0 w-full mt-10">
                     <div class="flex justify-between">
